@@ -19,4 +19,5 @@ public class Movement : MonoBehaviour
         transform.position += mainCamera.rotation * Vector3.forward * speed;
         transform.position = new Vector3(transform.position.x, playerHeight, transform.position.z);
     }
+    
 }
