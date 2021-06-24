@@ -9,29 +9,35 @@ public class Player : MonoBehaviour
     public Transform target;
 
     public Teleportation teleportationBehaviour;
+    public LinearMovement linearMovementBehaviour;
 
     private void Awake()
     {
         teleportationBehaviour = new Teleportation(this.transform);
+
+        linearMovementBehaviour = new LinearMovement(this.transform, transform.GetChild(0));
     }
 
     private void Start()
     {
-        SoundManager soundManager = FindObjectOfType<SoundManager>();
 
-        soundManager.Play("KeyPress");
 
+    }
+
+    private void Update()
+    {
+        linearMovementBehaviour.Move();
     }
 
     public void TeleportToSphere(Transform sphere)
     {
         target = sphere;
 
-        StartCoroutine(WaitToAct());
+        StartCoroutine(WaitToTeleport());
     }
 
 
-    public IEnumerator WaitToAct()
+    public IEnumerator WaitToTeleport()
     {
         yield return new WaitForSeconds(teleportationDleay);
 
