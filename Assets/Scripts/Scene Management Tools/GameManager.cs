@@ -17,4 +17,9 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(indestructable);
         }
     }
+
+    private void Start()
+    {
+        GetComponent<SoundManager>().Play("dion");
+    }
 }

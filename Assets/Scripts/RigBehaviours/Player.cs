@@ -11,6 +11,13 @@ public class Player : MonoBehaviour
     public Teleportation teleportationBehaviour;
     public LinearMovement linearMovementBehaviour;
 
+    public GameObject playerUI;
+
+    private void OnEnable()
+    {
+
+    }
+
     private void Awake()
     {
         teleportationBehaviour = new Teleportation(this.transform);
@@ -18,11 +25,17 @@ public class Player : MonoBehaviour
         linearMovementBehaviour = new LinearMovement(this.transform, transform.GetChild(0));
     }
 
-    private void Start()
+    public void StartMoving()
     {
-
-
+        linearMovementBehaviour.SetSpeed(0.002f);
     }
+
+    public void StopMoving()
+    {
+        linearMovementBehaviour.SetSpeed(0);
+    }
+
+
 
     private void Update()
     {
