@@ -457,7 +457,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433537dfc77b8eb498b2a4bd5f34ff4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    spatialBlend: 0
+    looping: 0
+    origin: {fileID: 0}
+    source: {fileID: 0}
+  - name: dion
+    clip: {fileID: 8300000, guid: 13753ca180dcfbb45a757f606b468570, type: 3}
+    volume: 1
+    pitch: 0
+    spatialBlend: 1
+    looping: 1
+    origin: {fileID: 1816881315}
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    spatialBlend: 0
+    looping: 0
+    origin: {fileID: 0}
+    source: {fileID: 0}
 --- !u!4 &1059938191
 Transform:
   m_ObjectHideFlags: 0
