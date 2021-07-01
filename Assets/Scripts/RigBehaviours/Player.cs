@@ -13,10 +13,7 @@ public class Player : MonoBehaviour
 
     public GameObject playerUI;
 
-    private void OnEnable()
-    {
-
-    }
+  
 
     private void Awake()
     {
@@ -27,7 +24,7 @@ public class Player : MonoBehaviour
 
     public void StartMoving()
     {
-        linearMovementBehaviour.SetSpeed(0.002f);
+        linearMovementBehaviour.SetSpeed(0.005f);
     }
 
     public void StopMoving()
