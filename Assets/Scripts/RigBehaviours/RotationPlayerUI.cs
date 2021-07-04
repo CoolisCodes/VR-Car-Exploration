@@ -13,6 +13,8 @@ public class RotationPlayerUI
     public void GetRotation()
     {
         UIrotation.rotation = CameraRot.rotation;
+        //UIrotation.LookAt(CameraRot);
+  
     }
 
     /// <summary>
