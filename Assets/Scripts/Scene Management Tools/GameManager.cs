@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> indestructables = new List<GameObject>();
-
+    
     private void Awake()
     {
         DontDestroyOnLoad(this);
