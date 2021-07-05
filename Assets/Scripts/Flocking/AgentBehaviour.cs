@@ -10,7 +10,8 @@ public class AgentBehaviour : MonoBehaviour
     public float valueRange = 10;
     public float randomX;
     public float randomY;
-
+    private Animator anim;
+    public string AnimName;
     private void Awake()
     {
         myAgent = GetComponent<NavMeshAgent>();
@@ -18,9 +19,17 @@ public class AgentBehaviour : MonoBehaviour
 
     private void Start()
     {
+        
         StartCoroutine(WaitToAct());
+        anim = GetComponent<Animator>();
     }
-
+    private void Update()
+    {
+        if (anim != null)
+        {
+            anim.Play(AnimName);
+        }
+    }
     public void RandomizeValues()
     {
         float randomFloatX = Random.Range(-valueRange, valueRange + 1);

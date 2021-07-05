@@ -8,15 +8,28 @@ public class RotationRandomizer : MonoBehaviour
     public float speed = 0.55f;
     public float angle = 90f;
     public float inTime = 2f;
- 
+    private Animator anim;
+    public string AnimName;
 
     
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         StartCoroutine(RotateObject(Vector3.up));
        
     }
+
+    void Update()
+    {
+        transform.position += transform.rotation * Vector3.forward * speed * Time.deltaTime;
+        if (anim != null)
+        {
+            Debug.Log("Animation on");
+            anim.Play(AnimName);
+        }
+    }
+
 
     IEnumerator RotateObject(Vector3 axis)
     {
@@ -38,10 +51,7 @@ public class RotationRandomizer : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
-    {
-        transform.position += transform.rotation * Vector3.forward * speed * Time.deltaTime;
-    }
+    
     private void OnCollisionEnter(Collision collision)
     {
 

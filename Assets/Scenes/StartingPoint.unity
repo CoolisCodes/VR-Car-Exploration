@@ -816,7 +816,7 @@ MonoBehaviour:
     pitch: 1.02
     spatialBlend: 1
     looping: 0
-    origin: {fileID: 1668188202801692, guid: 7e6e29f21a00d5f499e21eb93d6fabaa, type: 3}
+    origin: {fileID: 0}
     source: {fileID: 0}
   - name: Hello_Help_you_Agent
     clip: {fileID: 8300000, guid: f1b53bfd2b5ec9f45b902a5384ecd5ff, type: 3}
@@ -824,8 +824,7 @@ MonoBehaviour:
     pitch: 1
     spatialBlend: 0.985
     looping: 0
-    origin: {fileID: 1055092822465376440, guid: 1ef3a9e405edef249ab8523504294c60,
-      type: 3}
+    origin: {fileID: 0}
     source: {fileID: 0}
   - name: Hello_Male_B
     clip: {fileID: 8300000, guid: 3b88a25bc00f7ed4281d6de95bcc1c70, type: 3}
@@ -833,7 +832,7 @@ MonoBehaviour:
     pitch: 1
     spatialBlend: 1
     looping: 0
-    origin: {fileID: 1804324718265296, guid: f933c455b886ad644b60dc415ab31bb3, type: 3}
+    origin: {fileID: 0}
     source: {fileID: 0}
   - name: Hello_Male_C
     clip: {fileID: 8300000, guid: 3b88a25bc00f7ed4281d6de95bcc1c70, type: 3}
@@ -841,7 +840,7 @@ MonoBehaviour:
     pitch: 1
     spatialBlend: 1
     looping: 0
-    origin: {fileID: 1253086935255656, guid: 60e8218091f83244c9bf9c8c2569a009, type: 3}
+    origin: {fileID: 0}
     source: {fileID: 0}
   - name: Hello_F_B
     clip: {fileID: 8300000, guid: f1b53bfd2b5ec9f45b902a5384ecd5ff, type: 3}
@@ -849,7 +848,7 @@ MonoBehaviour:
     pitch: 1
     spatialBlend: 1
     looping: 1
-    origin: {fileID: 1896801731341158, guid: a367f32b0351f2648a0e15f3444c6f86, type: 3}
+    origin: {fileID: 0}
     source: {fileID: 0}
   - name: Hello_F_C
     clip: {fileID: 8300000, guid: f1b53bfd2b5ec9f45b902a5384ecd5ff, type: 3}
@@ -857,7 +856,7 @@ MonoBehaviour:
     pitch: 1
     spatialBlend: 1
     looping: 1
-    origin: {fileID: 1131775697853092, guid: de2a7efe044817e43b49fa819dea7499, type: 3}
+    origin: {fileID: 0}
     source: {fileID: 0}
   - name: Spider
     clip: {fileID: 8300000, guid: 67cba10d65c996f41b789246a7d4cef3, type: 3}
@@ -865,7 +864,7 @@ MonoBehaviour:
     pitch: 1
     spatialBlend: 1
     looping: 0
-    origin: {fileID: 1715103906888602, guid: 33b828b8f1c31334988de54e3fe47ee6, type: 3}
+    origin: {fileID: 0}
     source: {fileID: 0}
   - name: element 5
     clip: {fileID: 0}
