@@ -409,7 +409,12 @@ MonoBehaviour:
     speed: 0
     mainCamera: {fileID: 0}
     playerHeight: 1.75
+  RotationUIBehaviour:
+    UIrotation: {fileID: 0}
+    CameraRot: {fileID: 0}
   playerUI: {fileID: 5087602420482868719}
+  returnToGame: {fileID: 0}
+  rig: {fileID: 0}
 --- !u!1 &5087602420482868719
 GameObject:
   m_ObjectHideFlags: 0

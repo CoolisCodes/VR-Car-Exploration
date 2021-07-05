@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(SceneManagement))]
 public class GameManager : MonoBehaviour
 {
+    
     public List<GameObject> indestructables = new List<GameObject>();
     
     private void Awake()
@@ -14,12 +15,14 @@ public class GameManager : MonoBehaviour
 
         foreach (GameObject indestructable in indestructables)
         {
+            
             DontDestroyOnLoad(indestructable);
         }
     }
 
     private void Start()
     {
+        
         GetComponent<SoundManager>().Play("dion");
     }
 }
