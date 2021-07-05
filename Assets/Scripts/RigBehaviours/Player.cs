@@ -7,25 +7,26 @@ public class Player : MonoBehaviour
     public float teleportationDleay = 0;
 
     public Transform target;
-    
+
     public Teleportation teleportationBehaviour;
     public LinearMovement linearMovementBehaviour;
     public RotationUIButtons RotationUIBehaviour;
 
-    
+
     public GameObject playerUI;
     public GameObject returnToGame;
     public GameObject rig;
+    public Rigidbody rb;
 
     private void Awake()
     {
-
-        
         teleportationBehaviour = new Teleportation(this.transform);
 
         linearMovementBehaviour = new LinearMovement(this.transform, transform.GetChild(0));
 
         RotationUIBehaviour = new RotationUIButtons(transform.GetChild(1), transform.GetChild(0));
+
+        rb = GetComponent<Rigidbody>();
     }
 
     public void StartMoving()
@@ -36,6 +37,7 @@ public class Player : MonoBehaviour
     public void StopMoving()
     {
         linearMovementBehaviour.SetSpeed(0);
+        rb.velocity = Vector3.zero;
     }
 
 
@@ -48,13 +50,13 @@ public class Player : MonoBehaviour
 
     public void TeleportToSphere(Transform sphere)
     {
-        Debug.Log("Active? " + gameObject.activeInHierarchy);
-        if (gameObject.activeInHierarchy == false)
-        {
-            gameObject.SetActive(true);
-            Debug.Log("Active? " + base.gameObject.activeInHierarchy);
-        }
-        
+        //Debug.Log("Active? " + gameObject.activeInHierarchy);
+        //if (gameObject.activeInHierarchy == false)
+        //{
+        //    gameObject.SetActive(true);
+        //    Debug.Log("Active? " + base.gameObject.activeInHierarchy);
+        //}
+
         target = sphere;
 
         StartCoroutine(WaitToTeleport());

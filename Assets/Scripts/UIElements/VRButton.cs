@@ -19,11 +19,7 @@ public class VRButton : MonoBehaviour
         StartCoroutine(WaitToInterract());
     }
 
-    public void StopGame()
-    {
-        Application.Quit();
-        Debug.Log("Game Succefully Ended.!");
-    }
+
     public IEnumerator WaitToInterract()
     {
         yield return new WaitForSeconds(interactionDelay);

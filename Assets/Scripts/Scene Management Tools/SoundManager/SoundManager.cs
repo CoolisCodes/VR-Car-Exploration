@@ -27,6 +27,18 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void AddOrigin(GameObject origin, string soundName)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == soundName);
+
+        s.source = origin.AddComponent<AudioSource>();
+
+        s.source.clip = s.clip;
+        s.source.volume = s.volume;
+        s.source.pitch = s.pitch;
+        s.source.spatialBlend = s.spatialBlend;
+    }
+
 
     public void Play(string name)
     {

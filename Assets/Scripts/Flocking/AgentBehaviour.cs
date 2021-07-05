@@ -44,5 +44,5 @@ public class AgentBehaviour : MonoBehaviour
             yield return new WaitForSeconds(movementDelay);
         }
     }
-    
+
 }
