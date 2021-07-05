@@ -9,6 +9,7 @@ public class IntroductionVideo : MonoBehaviour
     {
         FindObjectOfType<Player>().playerUI.SetActive(false);
         FindObjectOfType<Player>().returnToGame.SetActive(true);
+        //FindObjectOfType<GameManager>().GetComponent<SoundManager>().Stop("dion");
     }
 
     // Update is called once per frame

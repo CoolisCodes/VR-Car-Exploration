@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     public Teleportation teleportationBehaviour;
     public LinearMovement linearMovementBehaviour;
-    public RotationPlayerUI RotationUIBehaviour;
+    public RotationUIButtons RotationUIBehaviour;
 
     public GameObject playerUI;
     public GameObject returnToGame;
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 
         linearMovementBehaviour = new LinearMovement(this.transform, transform.GetChild(0));
 
-        RotationUIBehaviour = new RotationPlayerUI(transform.GetChild(1), transform.GetChild(0));
+        RotationUIBehaviour = new RotationUIButtons(transform.GetChild(1), transform.GetChild(0));
     }
 
     public void StartMoving()
