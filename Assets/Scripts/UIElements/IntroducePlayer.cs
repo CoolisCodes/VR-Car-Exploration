@@ -11,7 +11,7 @@ public class IntroducePlayer : MonoBehaviour
         
         FindObjectOfType<Player>().returnToGame.SetActive(false);
         FindObjectOfType<Player>().playerUI.SetActive(true);
-        FindObjectOfType<Player>().linearMovementBehaviour.playerHeight = -11.50f;
+        FindObjectOfType<Player>().linearMovementBehaviour.playerHeight = -12.50f;
         //FindObjectOfType<Player>().rig.SetActive(true);
 
     }

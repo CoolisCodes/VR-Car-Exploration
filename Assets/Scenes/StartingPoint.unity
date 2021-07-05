@@ -804,9 +804,9 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: dion
     clip: {fileID: 8300000, guid: 13753ca180dcfbb45a757f606b468570, type: 3}
-    volume: 0.463
+    volume: 0.422
     pitch: 1
-    spatialBlend: 0
+    spatialBlend: 0.998
     looping: 1
     origin: {fileID: 0}
     source: {fileID: 0}
@@ -1247,7 +1247,7 @@ PrefabInstance:
     - target: {fileID: 5942486665502519301, guid: 34691df439636f445a2df449f06775e6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.08
+      value: -1.08
       objectReference: {fileID: 0}
     - target: {fileID: 6557238098509194426, guid: 34691df439636f445a2df449f06775e6,
         type: 3}
