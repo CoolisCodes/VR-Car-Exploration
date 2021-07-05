@@ -48,11 +48,11 @@ public class Player : MonoBehaviour
 
     public void TeleportToSphere(Transform sphere)
     {
-        Debug.Log("Active? " + rig.activeInHierarchy);
-        if (rig.activeInHierarchy == false)
+        Debug.Log("Active? " + gameObject.activeInHierarchy);
+        if (gameObject.activeInHierarchy == false)
         {
-            rig.SetActive(true);
-            Debug.Log("Active? " + gameObject.activeInHierarchy);
+            gameObject.SetActive(true);
+            Debug.Log("Active? " + base.gameObject.activeInHierarchy);
         }
         
         target = sphere;
