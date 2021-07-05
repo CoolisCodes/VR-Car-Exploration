@@ -14,10 +14,13 @@ public class RotationUIButtons
     {
         UIrotation.rotation = CameraRot.rotation;
         //UIrotation.LookAt(CameraRot);
-
+        //Vector3 buttonPos = Camera.main.WorldToScreenPoint(UIrotation.position);
+        //UIrotation.position = buttonPos;
         /*Vector3 relativePos = CameraRot.position - UIrotation.position;
         Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
         UIrotation.rotation = rotation;*/
+
+       
   
     }
 
