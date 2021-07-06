@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
 
     public void StartMoving()
     {
-        linearMovementBehaviour.SetSpeed(0.04f);
+        linearMovementBehaviour.SetSpeed(0.08f);
     }
 
     public void StopMoving()
