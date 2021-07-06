@@ -12,9 +12,5 @@ public class IntroductionVideo : MonoBehaviour
         //FindObjectOfType<GameManager>().GetComponent<SoundManager>().Stop("dion");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

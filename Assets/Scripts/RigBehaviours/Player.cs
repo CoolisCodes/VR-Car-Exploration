@@ -39,15 +39,21 @@ public class Player : MonoBehaviour
         linearMovementBehaviour.SetSpeed(0);
         rb.velocity = Vector3.zero;
     }
-
+    public void Start()
+    {
+        RotationUIBehaviour.CalculateOffSet();
+    }
 
 
     private void Update()
     {
         linearMovementBehaviour.Move();
+        
+    }
+    private void LateUpdate()
+    {
         RotationUIBehaviour.GetRotation();
     }
-
     public void TeleportToSphere(Transform sphere)
     {
         //Debug.Log("Active? " + gameObject.activeInHierarchy);

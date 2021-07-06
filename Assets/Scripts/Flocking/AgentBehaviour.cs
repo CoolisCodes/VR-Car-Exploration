@@ -15,13 +15,14 @@ public class AgentBehaviour : MonoBehaviour
     private void Awake()
     {
         myAgent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
     }
 
     private void Start()
     {
         
         StartCoroutine(WaitToAct());
-        anim = GetComponent<Animator>();
+        
     }
     private void Update()
     {
